@@ -32,7 +32,18 @@ export default function BoardOfDirectorsPage() {
               <div className="board-card-copy">
                 <p className="board-role">{member.role}</p>
                 <h2>{member.name}</h2>
-                {member.bio && <p className="board-bio">{member.bio}</p>}
+                {member.bio && (
+                  <div className="board-bio">
+                    {member.bio.map((paragraph) => (
+                      <p key={paragraph}>{paragraph}</p>
+                    ))}
+                  </div>
+                )}
+                {member.linkedIn && (
+                  <a className="text-link board-profile-link" href={member.linkedIn}>
+                    {member.name} on LinkedIn
+                  </a>
+                )}
               </div>
             </li>
           ))}

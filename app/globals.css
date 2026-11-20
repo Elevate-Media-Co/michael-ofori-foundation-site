@@ -230,6 +230,8 @@ p + p { margin-top: .8rem; }
   text-transform: uppercase;
 }
 .board-bio { margin-top: .9rem; }
+.board-bio p + p { margin-top: .75rem; }
+.board-profile-link { display: inline-block; margin-top: .8rem; }
 
 .page-intro-photo .page-intro-inner { display: grid; align-items: center; grid-template-columns: .95fr 1.05fr; gap: clamp(2rem, 5vw, 5rem); }
 .page-intro-photo h1 { font-size: clamp(2.75rem, 4.8vw, 5.2rem); text-wrap: initial; }
@@ -479,3 +481,8 @@ main > .band:only-child .lead { margin-top: .75rem; }
 @media (max-width: 419px) {
   .gift-amounts { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
+
+.support-story-intro .lead { margin-top: .9rem; max-width: 34ch; }
+.support-story-body { padding: 0 .15rem 1.15rem; }
+.support-stories .support-story-body p { padding: 0; }
+.support-story-body .text-link { display: inline-block; margin-top: .65rem; }

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Closing, Founder, PhotoFrame, SectionHeading } from "@/components/editorial";
+import { SupportStories } from "@/components/support-stories";
 import { pageMetadata } from "@/lib/metadata";
 import { photos } from "@/lib/photos";
 import { programs } from "@/lib/programs";
@@ -70,6 +71,8 @@ export default function Home() {
           <p>{foundation.vision}</p>
         </div>
       </section>
+
+      <SupportStories />
 
       <Founder />
 
