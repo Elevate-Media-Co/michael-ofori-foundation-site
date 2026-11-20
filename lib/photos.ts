@@ -3,18 +3,18 @@ export type Photo = { src: string; alt: string; position?: string };
 export const photos = {
   hero: {
     src: "/images/clinical-care.webp",
-    alt: "A clinician and nurse speak with a patient in a hospital room",
-    position: "53% 46%",
+    alt: "A clinician reviews a chart with a patient in a clinic",
+    position: "56% 43%",
   },
   team: {
     src: "/images/healthcare-team.webp",
-    alt: "Healthcare professionals talking together in a hospital corridor",
-    position: "88% 45%",
+    alt: "Doctors and nurses standing together in a hospital corridor",
+    position: "50% 39%",
   },
   education: {
     src: "/images/medical-education.webp",
-    alt: "Medical students sharing notes in a bright hallway",
-    position: "50% 45%",
+    alt: "Three clinicians in white coats reviewing research together",
+    position: "50% 27%",
   },
   equipment: {
     src: "/images/hospital-equipment.webp",
@@ -28,7 +28,7 @@ export const photos = {
   },
   community: {
     src: "/images/community-care.webp",
-    alt: "A clinician talking with a patient and sharing information on a tablet",
-    position: "51% 48%",
+    alt: "A clinician in teal scrubs reviewing a document on a clipboard",
+    position: "62% 43%",
   },
 } satisfies Record<string, Photo>;

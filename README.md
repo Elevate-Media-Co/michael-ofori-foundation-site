@@ -1,6 +1,6 @@
 # Michael Ofori M.D. Foundation
 
-A six-page nonprofit website with privacy and terms pages, built with Next.js App Router, TypeScript, Tailwind CSS, and Lucide. Local WebP photographs are served through Next.js Image. Manrope and Playfair Display are self-hosted through Fontsource.
+A nonprofit website with a Board of Directors directory, privacy and terms pages, built with Next.js App Router, TypeScript, Tailwind CSS, and Lucide. Local WebP photographs are served through Next.js Image. Manrope and Playfair Display are self-hosted through Fontsource.
 
 ## Run locally
 
@@ -51,6 +51,7 @@ Copy `.env.example` to `.env.local` for local configuration.
 The contact endpoint validates submissions on the server and sends to the configured Foundation inbox. Visitor addresses are set as Reply-To. An accepted response means Resend accepted the request. Check the provider dashboard or delivery event to confirm inbox handoff. Consider a request rate limit for `POST /api/contact` through your hosting provider’s firewall before enabling the form publicly.
 
 - **Brand assets** — The supplied Foundation logo appears in the site header and footer. The supplied portrait of Dr. Michael K. Ofori appears in the Home and About founder sections. To update either asset, place the replacement under `public/images/` and set `logo` or `founderPortrait` in `lib/site.ts`. The browser icon derived from the supplied logo is in `app/icon.png`.
+- **Board of Directors** — Add approved member names, titles, biographies, and portrait paths in `lib/board.ts`. When a portrait is unavailable, the profile displays the member’s initials.
 - **Content** — Shared Foundation details live in `lib/site.ts`. Programs live in `lib/programs.ts`. Add verified reports and updates in `app/impact/page.tsx` when approved.
 - **Privacy and terms** — Review `app/privacy/page.tsx` and `app/terms/page.tsx` against the Foundation’s actual hosting, email and giving arrangements before publishing.
 - **Social sharing** — `public/images/social.jpg` is the local Open Graph photo. Metadata comes from `lib/metadata.ts`.

@@ -16,6 +16,7 @@ export const foundation = {
 export const navigation = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
+  { label: "Board", href: "/board-of-directors" },
   { label: "Programs", href: "/programs" },
   { label: "Impact", href: "/impact" },
   { label: "Get Involved", href: "/get-involved" },

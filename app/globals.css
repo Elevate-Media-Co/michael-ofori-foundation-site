@@ -192,6 +192,45 @@ p + p { margin-top: .8rem; }
 .page-intro { background: var(--tint); padding-block: clamp(4rem, 7.3vw, 7rem); border-bottom: 1px solid var(--line); }
 .page-intro h1 { max-width: 57rem; text-wrap: balance; }
 .page-intro .lead { max-width: 41rem; margin-top: 1.25rem; }
+
+.board-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 17.5rem), 1fr));
+  gap: clamp(1.5rem, 4vw, 3rem);
+  max-width: 57rem;
+}
+.board-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid var(--line);
+}
+.board-portrait { aspect-ratio: 5 / 4; }
+.board-initials {
+  display: grid;
+  place-items: center;
+  position: relative;
+  background: #e5eff8;
+  color: #496d8f;
+}
+.board-initials::before {
+  content: "";
+  position: absolute;
+  inset: 1rem;
+  border: 1px solid #acc1d6;
+}
+.board-initials span { font: 500 clamp(3.5rem, 8vw, 6.5rem)/1 var(--font-display); }
+.board-card-copy { padding: clamp(1.35rem, 3vw, 2.3rem); }
+.board-card-copy h2 { margin-top: .5rem; font-size: clamp(1.75rem, 3.6vw, 2.25rem); text-wrap: balance; }
+.board-role {
+  color: var(--blue);
+  font-size: .78rem;
+  font-weight: 850;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+.board-bio { margin-top: .9rem; }
+
 .page-intro-photo .page-intro-inner { display: grid; align-items: center; grid-template-columns: .95fr 1.05fr; gap: clamp(2rem, 5vw, 5rem); }
 .page-intro-photo h1 { font-size: clamp(2.75rem, 4.8vw, 5.2rem); text-wrap: initial; }
 .intro-image { min-height: clamp(18.75rem, 28vw, 26rem); }

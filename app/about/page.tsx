@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Closing, Founder, PageIntro, SectionHeading } from "@/components/editorial";
 import { pageMetadata } from "@/lib/metadata";
 import { photos } from "@/lib/photos";
@@ -21,6 +22,7 @@ export default function AboutPage() {
         <div className="wrap">
           <SectionHeading label="Our Story" title="How healthcare education and access connect.">
             <p className="lead">The Michael Ofori M.D. Foundation brings together support for people training to provide care and for the facilities where care is delivered. Its purpose is to improve access to the education, equipment, and supplies that both depend on.</p>
+            <Link href="/board-of-directors" className="text-link">Meet the Board of Directors</Link>
           </SectionHeading>
         </div>
       </section>

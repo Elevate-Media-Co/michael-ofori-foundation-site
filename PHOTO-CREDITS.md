@@ -6,12 +6,12 @@ The original photographs are published under the [Pexels License](https://www.pe
 
 | Local asset | Photographer and original |
 | --- | --- |
-| `healthcare-team.webp` | RDNE Stock project · [Medical Practitioners having a Discussion](https://www.pexels.com/photo/medical-practitioners-having-a-discussion-6129646/) |
-| `medical-education.webp` | Gustavo Fring · [Group of Medical Students at the Hallway Sharing Notes](https://www.pexels.com/photo/group-of-medical-students-at-the-hallway-sharing-notes-3985154/) |
+| `healthcare-team.webp` | RDNE Stock project · [Doctors and Nurses in a Hospital](https://www.pexels.com/photo/doctors-and-nurses-in-a-hospital-6129502/) |
+| `medical-education.webp` | Tima Miroshnichenko · [Doctors Working Together on a Research](https://www.pexels.com/photo/doctors-working-together-on-a-research-5452228/) |
 | `hospital-equipment.webp` | Pixabay · [White Hospital Beds](https://www.pexels.com/photo/white-hospital-beds-236380/) |
 | `clinic-supplies.webp` | Anna Shvets · [Assorted Medical Supplies on a Stainless Tray and Shelf](https://www.pexels.com/photo/assorted-medical-supplies-on-a-stainless-tray-and-shelf-4421490/) |
-| `community-care.webp` | Cedric Fauntleroy · [A Doctor Talking to a Patient while Holding a Tablet](https://www.pexels.com/photo/a-doctor-talking-to-a-patient-while-holding-a-tablet-4266936/) |
-| `clinical-care.webp` and `social.jpg` | RDNE Stock project · [Doctor talking to a Patient](https://www.pexels.com/photo/doctor-talking-to-a-patient-6129681/) |
+| `community-care.webp` | Laura James · [African American Physician Reading Document at Work](https://www.pexels.com/photo/african-american-physician-reading-document-at-work-6097756/) |
+| `clinical-care.webp` and `social.jpg` | Klaus Nielsen · [Doctor Showing Diagnosis to Black Patient in Hospital](https://www.pexels.com/photo/doctor-showing-diagnosis-to-black-patient-in-hospital-6303652/) |
 
 ## Supplied brand assets
 

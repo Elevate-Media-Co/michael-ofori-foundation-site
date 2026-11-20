@@ -15,6 +15,7 @@ export function Footer() {
           <nav className="footer-nav" aria-label="Foundation information">
             <h2>Explore</h2>
             <Link href="/about">About the Foundation</Link>
+            <Link href="/board-of-directors">Board of Directors</Link>
             <Link href="/programs">Our Programs</Link>
             <Link href="/impact">Our Impact</Link>
             <Link href="/get-involved">Get Involved</Link>
