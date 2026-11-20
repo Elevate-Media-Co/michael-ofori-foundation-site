@@ -1,6 +1,8 @@
-import { BookOpen, HandHeart, HeartHandshake, UsersRound } from "lucide-react";
+import { BookOpen, HeartHandshake, UsersRound } from "lucide-react";
 import Link from "next/link";
 import { PageIntro } from "@/components/editorial";
+import { DonationPanel } from "@/components/donation-panel";
+import { GivingFaq } from "@/components/giving-faq";
 import { publicDetails } from "@/lib/config";
 import { pageMetadata } from "@/lib/metadata";
 
@@ -22,22 +24,9 @@ export default function GetInvolvedPage() {
             <p className="eyebrow">Support Our Mission</p>
             <h2>Give to the Foundation.</h2>
             <p className="lead">Your support can help meet educational needs and make essential equipment and supplies more accessible to healthcare facilities.</p>
+            <a className="text-link giving-faq-link" href="#giving-faq">Giving questions</a>
           </div>
-          <div className="giving-card">
-            <HandHeart size={30} strokeWidth={1.4} aria-hidden="true" />
-            <h3>Online giving</h3>
-            {publicDetails.donation ? (
-              <>
-                <p>Choose your gift amount and complete payment through our hosted donation page.</p>
-                <a href={publicDetails.donation} className="button button-primary">Continue to donation checkout</a>
-              </>
-            ) : (
-              <>
-                <p>Online donations are awaiting setup. You can contact the Foundation with questions about giving.</p>
-                <Link className="button button-primary" href="/contact?inquiry=giving">Ask about giving</Link>
-              </>
-            )}
-          </div>
+          <DonationPanel checkoutUrl={publicDetails.donation} />
         </div>
       </section>
       <section className="band">
@@ -57,6 +46,7 @@ export default function GetInvolvedPage() {
           </div>
         </div>
       </section>
+      <GivingFaq checkoutAvailable={Boolean(publicDetails.donation)} />
     </>
   );
 }

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Closing, PageIntro, PhotoFrame } from "@/components/editorial";
+import { SupportFinder } from "@/components/support-finder";
 import { pageMetadata } from "@/lib/metadata";
 import { programs } from "@/lib/programs";
 
@@ -14,6 +15,7 @@ export default function ProgramsPage() {
           {programs.map(({ id, title }) => <li key={id}><a href={`#${id}`}>{title}</a></li>)}
         </ul>
       </nav>
+      <SupportFinder />
 
       <div className="wrap program-list">
         {programs.map(({ id, title, detail, photo, action, inquiry, icon: Icon }) => (

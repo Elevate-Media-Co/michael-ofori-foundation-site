@@ -22,5 +22,7 @@ export const boardMembers: BoardMember[] = [
     name: "Emelia Kettey",
     role: "Director & Treasurer",
     initials: "EK",
+    photo: "/images/emelia-kettey.webp",
+    photoPosition: "50% 0%",
   },
 ];

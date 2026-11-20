@@ -378,3 +378,104 @@ main > .band:only-child .lead { margin-top: .75rem; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
 }
+
+.giving-faq-link { display: inline-block; margin-top: 1rem; }
+.donation-panel { padding: clamp(1.25rem, 3.3vw, 2.35rem); }
+.donation-heading { display: flex; align-items: center; gap: .75rem; }
+.donation-panel .donation-heading h3 { margin: 0; }
+.donation-panel .donation-heading h3:focus { outline: none; }
+.donation-panel .donation-notice {
+  margin: .9rem 0 1.1rem;
+  padding: .6rem .75rem;
+  max-width: none;
+  background: var(--tint);
+  border-left: 2px solid var(--gold);
+  color: var(--muted);
+  font-size: .88rem;
+}
+.donation-form fieldset, .support-finder fieldset { min-width: 0; margin: 0 0 1.1rem; }
+.donation-form legend, .support-finder legend {
+  margin-bottom: .44rem;
+  color: var(--ink);
+  font-size: .94rem;
+  font-weight: 800;
+}
+.gift-currency { color: var(--muted); font-size: .75rem; margin-left: .25rem; }
+.gift-options { display: grid; gap: .4rem; }
+.gift-frequency { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.gift-amounts { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+.gift-options label { position: relative; min-width: 0; cursor: pointer; }
+.gift-options span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.75rem;
+  border: 1px solid #b2c3d2;
+  border-radius: .15rem;
+  padding: .42rem .32rem;
+  background: white;
+  color: var(--ink);
+  font-size: .88rem;
+  line-height: 1.22;
+  text-align: center;
+  font-weight: 750;
+}
+.gift-options label:hover span { border-color: var(--blue); }
+.gift-options input:checked + span {
+  background: #e5eff8;
+  border-color: var(--ink);
+  box-shadow: inset 0 0 0 1px var(--ink);
+}
+.gift-options input:focus-visible + span { outline: 2px solid var(--blue); outline-offset: 3px; }
+.donation-form { margin-top: 1.05rem; }
+.gift-primary { width: 100%; }
+.donation-panel .gift-custom p { margin: .35rem 0 0; }
+.gift-review { padding-top: .2rem; }
+.gift-summary div { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .1rem .75rem; border-bottom: 1px solid var(--line); padding: .6rem 0; }
+.gift-summary dt { color: var(--muted); }
+.gift-summary dd { color: var(--ink); font-weight: 850; overflow-wrap: anywhere; }
+.gift-edit { display: inline-flex; align-items: center; gap: .35rem; margin-top: .5rem; min-height: 2.75rem; }
+.gift-checkout {
+  display: flex;
+  gap: .66rem;
+  margin: .7rem 0 1rem;
+  padding: .8rem;
+  background: var(--tint);
+  color: var(--muted);
+}
+.gift-checkout svg { flex-shrink: 0; }
+.gift-checkout h4 { color: var(--ink); font-size: .95rem; font-weight: 850; }
+.donation-panel .gift-checkout p { margin: .25rem 0 0; font-size: .86rem; }
+.giving-faq details { border-bottom: 1px solid var(--line); }
+.giving-faq details:first-child { border-top: 1px solid var(--line); }
+.giving-faq summary {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  cursor: pointer;
+  list-style: none;
+  padding: .95rem .15rem;
+  color: var(--ink);
+  font-weight: 800;
+}
+.giving-faq summary::-webkit-details-marker { display: none; }
+.giving-faq summary svg { flex: 0 0 auto; margin-top: .28rem; color: var(--blue); }
+.giving-faq details[open] summary svg { transform: rotate(45deg); }
+.giving-faq details p { padding: 0 .15rem 1rem; }
+.support-finder { padding-block: clamp(1.65rem, 4.3vw, 3rem); border-bottom: 1px solid var(--line); }
+.support-finder-grid { display: grid; grid-template-columns: 1.1fr 1fr; align-items: center; gap: 1.2rem clamp(1.8rem, 5vw, 4.7rem); }
+.support-finder h2 { font-size: clamp(1.8rem, 3.2vw, 2.8rem); }
+.support-finder fieldset { margin: .8rem 0 0; }
+.support-options { display: flex; flex-wrap: wrap; }
+.support-options span { padding-inline: .7rem; }
+.support-answer { padding-left: 1.2rem; border-left: 2px solid var(--gold); }
+.support-answer p { margin: .4rem 0 .5rem; }
+.support-answer .text-link { display: inline-flex; flex-wrap: wrap; align-items: center; gap: .35rem; }
+
+@media (max-width: 760px) {
+  .support-finder-grid { grid-template-columns: minmax(0, 1fr); }
+  .support-answer { padding-left: .8rem; }
+}
+@media (max-width: 419px) {
+  .gift-amounts { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}

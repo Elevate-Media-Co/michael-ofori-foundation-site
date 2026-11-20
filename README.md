@@ -11,7 +11,7 @@ npm ci
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000). The website runs with no credentials. Online giving and contact submission show their setup status until their providers are configured.
+Open [http://localhost:3000](http://localhost:3000). The website runs with no credentials. The giving panel offers a two-step gift preview. The contact form shows its setup status until the email provider is configured.
 
 ```sh
 npm run lint
@@ -41,12 +41,14 @@ Copy `.env.example` to `.env.local` for local configuration.
 | Setting | Use |
 | --- | --- |
 | `SITE_URL` | Canonical HTTPS production origin. Pages carry a noindex tag until a canonical origin is set. Vercel previews also carry a noindex tag. |
-| `DONATION_URL` | Approved HTTPS link to the Foundation’s hosted donation page. The provider collects gift amount and payment information. |
+| `DONATION_URL` | Approved HTTPS link to the Foundation’s hosted donation page. The hosted provider collects the actual gift amount, frequency, contact details, and payment. Preview selections are local to the page and are independent of the provider checkout. |
 | `FOUNDATION_EMAIL`, `FOUNDATION_LOCATION` | Optional verified public email address and location. |
 | `FOUNDATION_LINKEDIN_URL`, `FOUNDATION_INSTAGRAM_URL` | Optional verified public HTTPS profile links. |
 | `RESEND_API_KEY` | Server-only API key with permission to send email. |
 | `CONTACT_FROM_EMAIL` | Sender address on a verified [Resend domain](https://resend.com/docs/dashboard/domains/introduction). |
 | `CONTACT_TO_EMAIL` | Foundation inbox that should receive inquiries. |
+
+The giving preview requests no donor or payment details. Once a hosted checkout is approved, confirm supported giving frequencies, payment methods, and confirmation emails with the provider before a production launch.
 
 The contact endpoint validates submissions on the server and sends to the configured Foundation inbox. Visitor addresses are set as Reply-To. An accepted response means Resend accepted the request. Check the provider dashboard or delivery event to confirm inbox handoff. Consider a request rate limit for `POST /api/contact` through your hosting provider’s firewall before enabling the form publicly.
 
@@ -54,7 +56,7 @@ The contact endpoint validates submissions on the server and sends to the config
 - **Board of Directors** — Add approved member names, titles, biographies, and portrait paths in `lib/board.ts`. When a portrait is unavailable, the profile displays the member’s initials.
 - **Content** — Shared Foundation details live in `lib/site.ts`. Programs live in `lib/programs.ts`. Add verified reports and updates in `app/impact/page.tsx` when approved.
 - **Privacy and terms** — Review `app/privacy/page.tsx` and `app/terms/page.tsx` against the Foundation’s actual hosting, email and giving arrangements before publishing.
-- **Social sharing** — `public/images/social.jpg` is the local Open Graph photo. Metadata comes from `lib/metadata.ts`.
+- **Social sharing** — `public/images/social-hope.jpg` is the local Open Graph photo. Metadata comes from `lib/metadata.ts`.
 - **Photography** — See [PHOTO-CREDITS.md](PHOTO-CREDITS.md) for source and license details.
 
 ## Project structure

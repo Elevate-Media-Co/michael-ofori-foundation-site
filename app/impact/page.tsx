@@ -29,6 +29,7 @@ export default function ImpactPage() {
         <div className="wrap">
           <SectionHeading label="Future Impact Reports" title="Foundation reports">
             <p className="lead">Impact reports will be published here once reviewed and available.</p>
+            <Link className="text-link" href="/board-of-directors">Meet the Board of Directors</Link>
           </SectionHeading>
         </div>
       </section>

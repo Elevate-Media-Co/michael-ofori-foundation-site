@@ -12,7 +12,7 @@ export function pageMetadata(title: string, description: string, path: string): 
     openGraph: {
       title: socialTitle,
       description,
-      ...(url ? { url, images: [{ url: new URL("/images/social.jpg", url).href, width: 1200, height: 630, alt: foundation.name }] } : {}),
+      ...(url ? { url, images: [{ url: new URL("/images/social-hope.jpg", url).href, width: 1200, height: 630, alt: foundation.name }] } : {}),
       siteName: foundation.name,
       locale: "en_US",
       type: "website",
@@ -21,7 +21,7 @@ export function pageMetadata(title: string, description: string, path: string): 
       card: siteOrigin ? "summary_large_image" : "summary",
       title: socialTitle,
       description,
-      ...(siteOrigin ? { images: [new URL("/images/social.jpg", siteOrigin).href] } : {}),
+      ...(siteOrigin ? { images: [new URL("/images/social-hope.jpg", siteOrigin).href] } : {}),
     },
   };
 }
