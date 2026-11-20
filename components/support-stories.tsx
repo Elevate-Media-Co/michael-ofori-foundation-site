@@ -27,6 +27,7 @@ export function SupportStories() {
     <section className="band" id="support-stories" aria-labelledby="support-stories-title">
       <div className="wrap involvement-grid">
         <div className="support-story-intro">
+          <p className="eyebrow">Stories of Hope &amp; Change</p>
           <h2 id="support-stories-title">What support can make possible.</h2>
           <p className="lead">Explore how the Foundation’s priorities connect to the needs of students, care teams, and communities.</p>
         </div>

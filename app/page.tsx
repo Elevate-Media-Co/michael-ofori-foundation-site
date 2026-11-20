@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { Closing, Founder, PhotoFrame, SectionHeading } from "@/components/editorial";
 import { SupportStories } from "@/components/support-stories";
+import { CommunityUpdates } from "@/components/foundation-updates";
+import { MissionActions } from "@/components/mission-actions";
 import { pageMetadata } from "@/lib/metadata";
 import { photos } from "@/lib/photos";
 import { programs } from "@/lib/programs";
@@ -37,6 +39,8 @@ export default function Home() {
           </SectionHeading>
         </div>
       </section>
+
+      <MissionActions />
 
       <section className="band focus">
         <div className="wrap">
@@ -75,6 +79,8 @@ export default function Home() {
       <SupportStories />
 
       <Founder />
+
+      <CommunityUpdates />
 
       <section className="band involvement">
         <div className="wrap involvement-grid">

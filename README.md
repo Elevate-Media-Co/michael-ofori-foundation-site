@@ -54,12 +54,12 @@ The contact endpoint validates submissions on the server and sends to the config
 
 - **Brand assets** — The supplied Foundation logo appears in the site header and footer. The supplied portrait of Dr. Michael K. Ofori appears in the Home and About founder sections. To update either asset, place the replacement under `public/images/` and set `logo` or `founderPortrait` in `lib/site.ts`. The browser icon derived from the supplied logo is in `app/icon.png`.
 - **Board of Directors** — Add approved member names, titles, biographies, and portrait paths in `lib/board.ts`. When a portrait is unavailable, the profile displays the member’s initials. Use approved, verifiable credentials and professional background.
-- **Content** — Shared Foundation details live in `lib/site.ts`. Programs live in `lib/programs.ts`. The home page’s illustrative program stories live in `components/support-stories.tsx`. Add verified reports and updates in `app/impact/page.tsx` when approved.
+- **Content** — Shared Foundation details live in `lib/site.ts`. Programs live in `lib/programs.ts`. The home page’s illustrative program stories live in `components/support-stories.tsx`. Add verified impact reports in `app/impact/page.tsx`. Add articles and announcements in `lib/updates.ts`, which feeds the home page, the updates index, and individual article routes. Publish event dates and participation details in `app/events/page.tsx` after confirmation.
 - **Privacy and terms** — Review `app/privacy/page.tsx` and `app/terms/page.tsx` against the Foundation’s actual hosting, email and giving arrangements before publishing.
 - **Social sharing** — `public/images/social-hope.jpg` is the local Open Graph photo. Metadata comes from `lib/metadata.ts`.
 - **Photography** — See [PHOTO-CREDITS.md](PHOTO-CREDITS.md) for source and license details.
 
-Emelia Kettey’s biography was checked against her [public LinkedIn profile](https://www.linkedin.com/in/emelia-kettey), the [BBB business listing for Kettey’s Beauty LLC](https://www.bbb.org/us/az/paradise-valley/profile/skin-care/ketteys-beauty-llc-1126-1000166796), and the [Kettey’s Exchange About page](https://ketteysnonprofit.org/about/).
+Dr. Michael K. Ofori’s specialty and education were checked against [Doximity](https://www.doximity.com/pub/michael-ofori-md) and his [NPI directory profile](https://npiprofile.com/npi/1962455782). Emelia Kettey’s nursing background was confirmed directly to the site owner. Her business and nonprofit background was checked against her [public LinkedIn profile](https://www.linkedin.com/in/emelia-kettey), the [BBB business listing for Kettey’s Beauty LLC](https://www.bbb.org/us/az/paradise-valley/profile/skin-care/ketteys-beauty-llc-1126-1000166796), and the [Kettey’s Exchange About page](https://ketteysnonprofit.org/about/).
 
 ## Project structure
 

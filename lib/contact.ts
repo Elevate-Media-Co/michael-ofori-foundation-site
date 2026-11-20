@@ -5,6 +5,7 @@ export const inquiryTypes = [
   { value: "giving", label: "Giving and donation inquiries" },
   { value: "partnership", label: "Organizational partnership" },
   { value: "volunteer", label: "Volunteering or collaboration" },
+  { value: "events", label: "Foundation events" },
   { value: "education", label: "Medical and dental education" },
   { value: "resources", label: "Equipment or medical supplies" },
 ] as const;

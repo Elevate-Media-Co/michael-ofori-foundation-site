@@ -19,6 +19,8 @@ export function Footer() {
             <Link href="/programs">Our Programs</Link>
             <Link href="/impact">Our Impact</Link>
             <Link href="/get-involved">Get Involved</Link>
+            <Link href="/events">Events</Link>
+            <Link href="/updates">News &amp; Updates</Link>
           </nav>
           <nav className="footer-nav" aria-label="Contact and social links">
             <h2>Connect</h2>
